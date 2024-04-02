@@ -18,14 +18,25 @@
         </header>
       </div>
 </header>
-<label for="iplat">Istabas platība m2:</label><br> 
-<input type="number" id="iplat" name="iplat"><br>
+<body>
+<label for="cena">Ievadiet lamināta cenu (pakā):</label><br><br>
+<input type="number" id="cena" placeholder="Cena (€/kv.m)"><br>
 
-<label for="lcena">Lamināta cena(1paka):</label><br> 
-<input type="number" id="lcena" name="lcena"><br>
+<label for="platiba">Ievadiet istabas platību (kv.m):</label><br>
+<input type="number" id="platiba" placeholder="Platība (kv.m)"><br><br>
 
-<label for="lskai">Lamināta skaits pakā m2:</label><br> 
-<input type="number" id="lskai" name="lskai"><br>
+<button onclick="aprēķināt()">Aprēķināt</button>
+
+<p id="rezultāts"></p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="container">
+  <footer class="d-flex flex-column h-100">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+    </ul>
+    <p class="text-center text-body-secondary">© 2024 Noslēguma darbs</p>
+  </footer>
+</div>
 
 <script src="script.js"></script>
 </body>

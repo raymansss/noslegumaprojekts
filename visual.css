@@ -14,6 +14,10 @@ button {
     
 }
 
+body {
+    text-align: center;
+}
+
 .pogaviens {
     top:11%;
     left:62%;
@@ -28,4 +32,32 @@ button {
 
 .augsa {
     background-color:white;
+}
+
+
+.board {
+    display: inline-block;
+    margin: 20px;
+}
+
+
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #030303;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+    color: #333;
+}
+.revealed {
+    background-color: #ccc;
+    color: #000;
+}
+.mine {
+    background-color: #ff3333;
 }
