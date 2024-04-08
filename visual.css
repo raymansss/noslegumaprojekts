@@ -61,3 +61,8 @@ body {
 .mine {
     background-color: #ff3333;
 }
+
+button {
+    width:250px;
+    height:50px;
+}

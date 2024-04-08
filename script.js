@@ -190,13 +190,7 @@ function aprēķināt() {
   }
 }
 
-function displayDateTime() {
-  var now = new Date();
-  var dateString = now.toDateString();
-  var timeString = now.toLocaleTimeString();
-  var timeZoneString = now.toTimeString().match(/\((.*)\)/)[1];
-
-  document.getElementById('date').innerHTML = dateString;
-  document.getElementById('time').innerHTML = timeString;
-  document.getElementById('timezone').innerHTML = timeZoneString;
-}
+const time = Date.now()
+const date = new Date(time);
+const currentDate = date.toString();
+document.getElementById("currentDate").innerHTML = currentDate; /// ielikt funkcijaa un setintervaldate
