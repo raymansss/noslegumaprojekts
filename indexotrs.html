@@ -9,28 +9,50 @@
     <link rel="stylesheet" href="visual.css">
     <title>Document</title>
 </head>
-<header>
+<body>
+<header class="bg-dark py-4">
     <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">   
-          <ul class="nav nav-pills">
-            <li class="nav-item" ><a href="#" class="btn btn-secondary" aria-current="page" onclick="location.href='index.html';" >Pirmā lapa</a></li>
-            <li class="nav-item"><a href="#" class="btn btn-secondary" onclick="location.href='indexotrs.html';">Otrā lapa</a></li>
-          </ul>
-        </header>
-      </div>
-
-      <h1>Mīnas</h1>
-      <div id="gameBoard"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Pirmā lapa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Otrā lapa</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="container">
-  <footer class="d-flex flex-column h-100">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    </ul>
-    <p class="text-center text-body-secondary">© 2024 Noslēguma darbs</p>
-  </footer>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="text-center">Mīnas</h1>
+            <div id="gameBoard" class="text-center"></div>
+        </div>
+    </div>
 </div>
-<p id="currentDate"></p>
+
+<footer class="bg-dark py-4 mt-5">
+    <div class="container">
+        <p class="text-white text-center mb-0">© 2024 Noslēguma darbs</p>
+        <p id="currentDate" class="text-white text-center"></p>
+    </div>
+</footer>
+
 <script src="script.js"></script>
+<script>
+    var currentDate = new Date();
+    var formattedDate = currentDate.getDate() + "/" + (currentDate.getMonth() + 1) + "/" + currentDate.getFullYear();
+    document.getElementById("currentDate").innerHTML = "Current Date: " + formattedDate;
+</script>
 </body>
 </html>

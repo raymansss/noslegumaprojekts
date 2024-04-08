@@ -1,3 +1,22 @@
+body {
+    text-align: center;
+}
+
+button {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
 
 header {
     background-color:grey;
@@ -12,10 +31,6 @@ button {
     height: 2cm;
     font-size:xx-large;
     
-}
-
-body {
-    text-align: center;
 }
 
 .pogaviens {
@@ -60,9 +75,4 @@ body {
 }
 .mine {
     background-color: #ff3333;
-}
-
-button {
-    width:250px;
-    height:50px;
 }
